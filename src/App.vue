@@ -22,7 +22,7 @@
 
               <!-- Bio -->
               <p
-                class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed"
+                class="text-center text-sm text-gray-600 dark:text-gray-400 leading-relaxed"
               >
                 Passionate full-stack developer with expertise in Python,
                 Django, DRF, Vue.js, Tailwind CSS, and building modern, scalable
@@ -33,14 +33,14 @@
 
               <!-- Origin -->
               <div
-                class="flex items-center gap-2 text-gray-600 dark:text-gray-400 my-10"
+                class="flex items-center justify-center gap-2 text-gray-600 dark:text-gray-400 my-10"
               >
               <i class="pi pi-home"></i>
                 <span>New York, USA</span>
               </div>
 
               <!-- Social Links -->
-              <div class="flex justify-start space-x-4 mt-6">
+              <div class="flex justify-center space-x-4 mt-6">
                 <a
                   href="https://github.com"
                   target="_blank"
