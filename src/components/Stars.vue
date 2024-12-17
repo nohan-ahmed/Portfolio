@@ -1,9 +1,9 @@
 <template>
-  <div class="stars-container z-10">
+  <div class="stars-container z-10 h-full lg:h-screen">
     <!-- Background Sky -->
     <div class="sky">
       <!-- Centered Text -->
-      <div class="content-container container mx-auto px-4 sm:px-6 lg:px-8 py-5">
+      <div class="content-container mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <slot name="content"> </slot>
       </div>
 
@@ -43,7 +43,7 @@ $numShootingStars: 10;
   display: block;
   position: relative;
   width: 100%;
-  height: 94vh; // Full viewport height
+  // height: 94vh; // Full viewport height
   background: linear-gradient(to bottom, #020107 0%, #201b46 100%);
 
   // .content-container {
