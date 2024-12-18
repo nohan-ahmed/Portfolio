@@ -8,6 +8,20 @@
             <!-- Left Section: Sidebar -->
             <aside
               class="w-full lg:w-3/12 bg-slate-300 dark:bg-gray-800 shadow-md p-6 lg:sticky lg:top-0 rounded-2xl"
+              v-motion
+              :initial="{
+                opacity: 0,
+                x: -100,
+              }"
+              :enter="{
+                opacity: 1,
+                x: 0,
+                transition: {
+                  type: 'spring',
+                  stiffness: '100',
+                  delay: 100,
+                },
+              }"
             >
               <div class="text-center z-20">
                 <!-- Profile Image -->
@@ -68,6 +82,8 @@
             <!-- Right Section: Main Content -->
             <main
               class="w-full lg:w-9/12 p-6 ml-5 overflow-y-auto flex flex-col justify-center"
+              preset="slideVisibleLeft"
+              :duration="600"
             >
               <div class="mb-4">
                 <button
@@ -76,6 +92,10 @@
                   Hi there! My self Nohan
                 </button>
                 <h1
+                  v-motion
+                  :initial="{ opacity: 0, y: -50 }"
+                  :enter="{ opacity: 1, y: 0 }"
+                  :transition="{ duration: 10, easing: 'ease-in-out' }"
                   class="mb-4 text-lg font-extrabold font-sans text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 md:text-5xl lg:text-6xl"
                 >
                   I'm a professional <br />
@@ -114,7 +134,26 @@
               </section>
 
               <!-- Buttons Section -->
-              <section class="flex justify-start space-x-4 mb-8">
+              <section
+                class="flex justify-start space-x-4 mb-8"
+                v-motion
+                :initial="{
+                  y: 100,
+                  opacity: 0,
+                }"
+                :enter="{
+                  y: 0,
+                  opacity: 1,
+                  transition: {
+                    y: {
+                      delay: 200,
+                    },
+                    opacity: {
+                      duration: 3000,
+                    },
+                  },
+                }"
+              >
                 <Button
                   as="router-link"
                   label="My Works"
