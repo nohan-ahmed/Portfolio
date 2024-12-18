@@ -68,7 +68,8 @@
             <!-- Right Section: Main Content -->
             <main class="w-full lg:w-9/12 p-6 ml-5 overflow-y-auto">
               <div class="mb-6">
-                <h1 class="mb-4 text-xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 md:text-5xl lg:text-6xl">
+                <button class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 font-serif">Hi there! My self Nohan</button>
+                <h1 class="mb-4 text-xl font-extrabold font-sans text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 md:text-5xl lg:text-6xl">
                   I'm a professional <br>
                   <TypingEffect
                     :strings="[
