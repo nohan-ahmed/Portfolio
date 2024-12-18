@@ -8,6 +8,9 @@ import router from './router'
 // PrimeVue imports
 import PrimeVue from 'primevue/config';
 import Aura from '@primevue/themes/aura';
+// Others third party
+import { MotionPlugin } from '@vueuse/motion'
+
 
 const app = createApp(App)
 
@@ -27,5 +30,9 @@ app.use(PrimeVue, {
         }
     }
 });
+
+// Others third party
+app.use(MotionPlugin)
+
 
 app.mount('#app')
